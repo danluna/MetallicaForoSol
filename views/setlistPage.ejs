@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metallica X Mexico</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/setlistPage.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="/javascripts/setlistPage.js"></script>
+
+
+  </head>
+  <body>  
+    <div>
+      <span class="home">Home</span>
+    </div>
+    <div class="title">
+      <p id = "mainTitle">Metallica in Mexico City</p>
+      <p id="night">Night <%= night %></p>
+      <p id="night"><%= date %>, 1990</p>
+      <p id="night">Venue: Foro Sol</p>
+    </div>
+    <div class="setlistArea">
+      <div><h2>Setlist:</h2></div>
+      <div class="songsArea">
+        <ol class="songList">
+          <% if (set.length > 0) { %>
+            <% for(var i=0; i<set.length; i++) { %>
+                <li class="song" id=<%="song"+(i+1)%>"> 
+                  <%= set[i] %> 
+                  <div class="songArea" style="display: none">
+                    <iframe width="400" height="250" src="http://www.youtube.com/embed/<%= links[i] %>" 
+                      frameborder="0" allowfullscreen>
+                    </iframe>
+                  </div>
+                </li>
+            <% } %>
+          <% } %>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

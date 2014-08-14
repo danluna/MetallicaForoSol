@@ -1,0 +1,59 @@
+body {
+	background-color: black;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.home {
+	color: white;
+	margin-left: 20%;
+	margin-bottom: -60px;
+	margin-top: -10px;
+	font-size: 25px;
+	border-color: white;
+	border-radius: 10px;
+	border-style: solid;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.title {
+	text-align: center;
+	font-size: 40px;
+}
+
+#mainTitle {
+	font-size: 50px;
+	margin-bottom: -10px;
+}
+
+.setlistArea {
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 25px;
+}
+
+.setlistArea, .title {
+	color: white;
+}
+
+.song {
+	margin-left: -30px;
+	margin-bottom: 20px;
+	background-color: #003366;
+	padding-left: 30px;
+	font-size: 30px;
+	border-radius: 10px;
+}
+
+.songsArea > ol > li {
+	list-style-type: none;
+}
+
+#night {
+	margin-bottom: -40px;
+}
+
+.songArea {
+	height: 270px;
+	width: 100px;
+}
